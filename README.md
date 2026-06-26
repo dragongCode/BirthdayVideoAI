@@ -37,7 +37,7 @@ To maintain a clean codebase, our extensive project references, marketing discov
 
 Primary release entry point (Landing Page first):
 
-- **🚀 Main Landing Page:** [birthdayvideoai.vercel.app](https://birthdayvideoai.vercel.app/)
+- **🚀 Main Landing Page:** [birthdayvideoai.vercel.app](https://birthdayvideoai.vercel.app/) · [birthday-video-ai.vercel.app](https://birthday-video-ai.vercel.app/)
 - **📄 GitHub Pages Mirror:** [dragongcode.github.io/BirthdayVideoAI](https://dragongcode.github.io/BirthdayVideoAI/)
 - **📦 Source Repository:** [github.com/dragongCode/BirthdayVideoAI](https://github.com/dragongCode/BirthdayVideoAI)
 

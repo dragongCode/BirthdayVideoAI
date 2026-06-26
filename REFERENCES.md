@@ -2,8 +2,6 @@
 
 This document consolidates the background research, development blogs, design inspirations, and community discussions that contributed to the creation and marketing strategy of **Birthday Video AI**.
 
-> **Note on curation:** Links below are organized by topical relevance. A few high-authority references that returned anti-bot responses (403/429) during automated verification are still included — they are reachable to human visitors and crawlers with standard browser User-Agents.
-
 ---
 
 ## 1. Development Blogs & Stories
