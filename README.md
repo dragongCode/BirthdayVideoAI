@@ -41,6 +41,14 @@ Primary release entry point (Landing Page first):
 - **📄 GitHub Pages Mirror:** [dragongcode.github.io/BirthdayVideoAI](https://dragongcode.github.io/BirthdayVideoAI/)
 - **📦 Source Repository:** [github.com/dragongCode/BirthdayVideoAI](https://github.com/dragongCode/BirthdayVideoAI)
 
+## Development Blogs
+
+Deep dives into why and how this smarter AI Birthday Video Maker was built:
+
+- **Dev.to:** [Why I Built a Smarter AI Birthday Video Maker](https://dev.to/dragongcode/why-i-built-a-smarter-ai-birthday-video-maker-87d)
+- **Telegra.ph:** [Project Concept Brief](https://telegra.ph/Why-I-Built-a-Smarter-AI-Birthday-Video-Maker-06-18)
+- **Rentry:** [Architecture Notes & Backups](https://rentry.co/qq8nv2ni)
+
 ## License
 
 For detailed licensing information, please refer to the LICENSE file.

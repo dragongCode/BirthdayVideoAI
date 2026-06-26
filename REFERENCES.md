@@ -4,41 +4,33 @@ This document consolidates the background research, development blogs, design in
 
 ---
 
-## 1. Development Blogs & Stories
-
-Deep dives into why and how this smarter AI Birthday Video Maker was built:
-
-- **Dev.to:** [Why I Built a Smarter AI Birthday Video Maker](https://dev.to/dragongcode/why-i-built-a-smarter-ai-birthday-video-maker-87d)
-- **Telegra.ph:** [Project Concept Brief](https://telegra.ph/Why-I-Built-a-Smarter-AI-Birthday-Video-Maker-06-18)
-- **Rentry:** [Architecture Notes & Backups](https://rentry.co/qq8nv2ni)
-
-## 2. Technical & Architecture Research
+## 1. Technical & Architecture Research
 
 Articles and papers reviewed regarding high-efficiency AI scaling, text processing, and data infrastructure:
 
-- **SyncedReview:** [Microsoft Fully Pipelined Distributed Transformer Processing Analysis](https://syncedreview.com/2024/09/09/microsofts-fully-pipelined-distributed-transformer-processes-16x-sequence-length-with-extreme-hardware-efficiency/) _(anti-bot gated)_
+- **SyncedReview:** [Microsoft Fully Pipelined Distributed Transformer Processing Analysis](https://syncedreview.com/2024/09/09/microsofts-fully-pipelined-distributed-transformer-processes-16x-sequence-length-with-extreme-hardware-efficiency/)
 - **Matemáticas Blog:** [Algorithmic Efficiency & Engineering](https://www.madrimasd.org/blogs/matematicas/2024/02/11/150483)
 - **Evergreen Blog:** [System Modularity & Sandbox Environments](http://blogs.evergreen.edu/morisa24/box-2-2/)
 
-## 3. UI/UX, Typography & Visual Inspiration
+## 2. UI/UX, Typography & Visual Inspiration
 
 Design assets, typography principles, and thematic structures analyzed during template curation:
 
-- **Pixel77:** [Typography Rules & Techniques](https://pixel77.com/typography-rules-technique/) _(anti-bot gated)_
-- **Pixel77:** [Best Fonts for Posters & Visual Mediums](https://pixel77.com/fonts-for-posters/) _(anti-bot gated)_
+- **Pixel77:** [Typography Rules & Techniques](https://pixel77.com/typography-rules-technique/)
+- **Pixel77:** [Best Fonts for Posters & Visual Mediums](https://pixel77.com/fonts-for-posters/)
 - **Craftberry Bush:** [Floral and Event Aesthetic Layouts](https://www.craftberrybush.com/2025/01/heart-shaped-flower-a)
 - **Paper Trail Design:** [Thematic Labels and Print Design](https://www.papertraildesign.com/football-water-bottle-label)
 - **Blank Itinerary:** [Visual Sequence & Timing Aesthetics](https://blankitinerary.com/santana-fall.html)
 - **Zeiss Blog:** [Precision Layouts & Measurement Alignment](https://blogs.zeiss.com/news/messtechnik-de/sorgsamkeit-brin)
 
-## 4. Multi-Language & Internationalization (i18n) Research
+## 3. Multi-Language & Internationalization (i18n) Research
 
 Localization paradigms and cross-cultural greetings researched for personalized templates:
 
 - **Learn A Language:** [Italian Greetings and Social Phrases](https://www.learnalanguage.com/blog/italian-greetings-how-are-you-in-italian/)
 - **Jillian C. York:** [On Memorability and Cultural Linguistics](https://jilliancyork.com/2010/02/20/on-memorability/)
 
-## 5. Creator Economy & Template Vertical Case Studies
+## 4. Creator Economy & Template Vertical Case Studies
 
 How consumer platforms structure seasonal celebrations, home activities, and user-generated media — informing our template marketplace and seasonal drops:
 
@@ -55,7 +47,7 @@ How consumer platforms structure seasonal celebrations, home activities, and use
 - **DIY Thrill:** [Citrus Recipes & Scent Mockups](https://diythrill.com/2018/09/23/orange-citrus-poo-pourri-recipe/)
 - **Beauty Through Imperfection:** [Kids & Family Celebration Frameworks](https://www.beautythroughimperfection.com/reindeer-donuts/)
 
-## 6. Marketing Dynamics & Platform Discovery Research
+## 5. Marketing Dynamics & Platform Discovery Research
 
 Case studies on community onboarding, distribution loops, and marketplace growth hacks:
 
@@ -69,9 +61,9 @@ Case studies on community onboarding, distribution loops, and marketplace growth
 - **NG.SE Blog:** [Unboxing Narratives and Media Hype](https://blogg.ng.se/michael-gill/2016/01/jag-och-dottern-oppnar-star-wars-lador)
 - **Five Reasons Sports:** [Miami Heat Fan Engagement Loops](https://www.fivereasonssports.com/news/ultimate-miami-heat-f)
 
-## 7. Open Submission Platforms & Directory Indexes
+## 6. Open Submission Platforms
 
-External indexes, submission portals, and discovery platforms reviewed during product mapping and directory submissions:
+External resources and submission portals reviewed during product mapping:
 
 - **FutureTools:** [Submit a Tool Portal](https://futuretools.io/submit-a-tool)
 - **MAE Burundi:** [Vacancy & Announcement Models](https://www.mae.gov.bi/en/vacancy-announcement/)
