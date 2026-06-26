@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord / Community
+    url: https://github.com/dragongCode
+    about: General questions and community chat.
+  - name: 📖 Project Documentation
+    url: https://github.com/dragongCode
+    about: Read the project README and REFERENCES first.
