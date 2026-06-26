@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Core -->
+  <title>Birthday Video AI — AI-Powered Personalized Birthday Video Generator</title>
+  <meta name="description" content="Birthday Video AI is an AI-powered birthday video generation application that creates personalized birthday wishes and invitation videos using curated templates and AI-assisted creative prompts." />
+  <meta name="keywords" content="birthday video ai, ai video generator, birthday wishes video, invitation maker, ai creative tools, personalized video, mp4 export, video templates, nextjs, drizzle orm, creem, better auth" />
+  <meta name="author" content="dragongCode" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://birthdayvideo.ai/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Birthday Video AI — AI-Powered Personalized Birthday Video Generator" />
+  <meta property="og:description" content="Create share-ready birthday wishes and invitation videos from curated templates or AI-assisted creative prompts." />
+  <meta property="og:url" content="https://birthdayvideo.ai/" />
+  <meta property="og:site_name" content="Birthday Video AI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Birthday Video AI" />
+  <meta name="twitter:description" content="AI-powered personalized birthday video generator." />
+
+  <!-- Sitemap hint -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-elev: #141414;
+      --bg-card: #1a1a1a;
+      --border: #2a2a2a;
+      --text: #fafafa;
+      --text-muted: #a0a0a0;
+      --accent: #f59e0b;
+      --accent-2: #ec4899;
+      --gradient: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-2); }
+
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+    .logo span { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    nav ul { display: flex; gap: 24px; list-style: none; }
+    nav ul a { color: var(--text-muted); font-size: 0.95rem; }
+    nav ul a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero { padding: 96px 0 64px; text-align: center; }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+    .hero h1 span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p.tagline {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 40px;
+    }
+    .cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--gradient);
+      color: #0a0a0a;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245, 158, 11, 0.3); color: #0a0a0a; }
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--text); }
+
+    /* Sections */
+    section { padding: 64px 0; border-top: 1px solid var(--border); }
+    section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    section h2 span { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    section .subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Features */
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .feature {
+      padding: 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: all 0.2s;
+    }
+    .feature:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+    }
+    .feature h3 { font-size: 1.15rem; margin-bottom: 8px; }
+    .feature p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Tech Stack */
+    .stack { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .stack-item {
+      padding: 12px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: "SF Mono", Monaco, monospace;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Links / Community */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .link-card {
+      display: block;
+      padding: 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.2s;
+    }
+    .link-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .link-card .label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px; }
+    .link-card .title { font-weight: 600; }
+
+    /* Footer */
+    footer {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--text-muted); margin: 0 8px; }
+    footer a:hover { color: var(--accent); }
+    .footer-cta {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 12px 24px;
+      background: var(--gradient);
+      color: #0a0a0a;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .footer-cta:hover { color: #0a0a0a; transform: translateY(-2px); }
+
+    @media (max-width: 640px) {
+      .hero { padding: 64px 0 48px; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Birthday Video <span>AI</span> 🎂</div>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#stack">Tech Stack</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="https://birthdayvideo.ai/">Try Now →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">✨ AI-Powered • Template-Driven • Production-Ready</div>
+        <h1>Personalized Birthday<br />Videos, <span>Powered by AI</span></h1>
+        <p class="tagline">
+          Create share-ready birthday wishes and invitation videos from curated templates or AI-assisted creative prompts. Built for speed, designed for joy.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="https://birthdayvideo.ai/" rel="noopener">Try Birthday Video AI →</a>
+          <a class="btn btn-secondary" href="https://github.com/dragongCode/birthday-video-ai" rel="noopener">View Source Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Why <span>Birthday Video AI</span></h2>
+        <p class="subtitle">Everything you need to create memorable, share-ready birthday videos in minutes — not hours.</p>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">🎬</div>
+            <h3>Template-Driven Creation</h3>
+            <p>Generate personalized birthday videos based on handpicked, high-quality templates curated for every occasion.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🤖</div>
+            <h3>AI-Assisted Production</h3>
+            <p>Support AI-powered generation for scripts, visual content, and personalized creative prompts.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">💳</div>
+            <h3>Credits & Payments</h3>
+            <p>Full user account system with credits, points, payment integration, and media asset uploads built in.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Modern Tech Stack</h3>
+            <p>Built with Next.js, Better Auth, Drizzle ORM, and Creem — battle-tested and production-ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="container">
+        <h2>Built With <span>Modern Tools</span></h2>
+        <p class="subtitle">A production-grade stack chosen for performance, developer experience, and long-term maintainability.</p>
+        <div class="stack">
+          <div class="stack-item">Next.js</div>
+          <div class="stack-item">Better Auth</div>
+          <div class="stack-item">Drizzle ORM</div>
+          <div class="stack-item">Creem</div>
+          <div class="stack-item">TypeScript</div>
+          <div class="stack-item">Tailwind CSS</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="container">
+        <h2>Join the <span>Community</span></h2>
+        <p class="subtitle">Follow the project, contribute feedback, and discover the people building Birthday Video AI.</p>
+        <div class="links-grid">
+          <a class="link-card" href="https://github.com/dragongCode" rel="noopener noreferrer">
+            <div class="label">Developer Ecosystem</div>
+            <div class="title">GitHub Organization →</div>
+          </a>
+          <a class="link-card" href="https://github.com/dragongCode/birthday-video-ai" rel="noopener noreferrer">
+            <div class="label">Source Code</div>
+            <div class="title">Production Repository →</div>
+          </a>
+          <a class="link-card" href="https://github.com/dragongCode/BirthdayVideoAI/blob/main/REFERENCES.md" rel="noopener noreferrer">
+            <div class="label">Background Research</div>
+            <div class="title">Project References &amp; Discovery →</div>
+          </a>
+          <a class="link-card" href="https://www.indiehackers.com/product/birthdayvideoai/" rel="noopener nofollow">
+            <div class="label">Product Hub</div>
+            <div class="title">Indie Hackers Listing →</div>
+          </a>
+          <a class="link-card" href="https://launchtory.com/projects/birthdayvideo-ai" rel="noopener nofollow">
+            <div class="label">Launchpad</div>
+            <div class="title">Launchtory Project Page →</div>
+          </a>
+          <a class="link-card" href="https://www.promoteproject.com/startup/200087/birthdayvideoai" rel="noopener nofollow">
+            <div class="label">Startup Directory</div>
+            <div class="title">PromoteProject Listing →</div>
+          </a>
+          <a class="link-card" href="https://x.com/DragongMusk" rel="noopener nofollow">
+            <div class="label">Social</div>
+            <div class="title">Twitter / X →</div>
+          </a>
+          <a class="link-card" href="https://www.linkedin.com/in/jake-gordon-08a925417/" rel="noopener nofollow">
+            <div class="label">Social</div>
+            <div class="title">LinkedIn →</div>
+          </a>
+          <a class="link-card" href="https://www.youtube.com/@JakeGong" rel="noopener nofollow">
+            <div class="label">Social</div>
+            <div class="title">YouTube Channel →</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <a class="footer-cta" href="https://birthdayvideo.ai/" rel="noopener">Get Started at birthdayvideo.ai →</a>
+      <p>
+        <a href="https://github.com/dragongCode/birthday-video-ai">Source</a> ·
+        <a href="https://github.com/dragongCode/BirthdayVideoAI/blob/main/REFERENCES.md">References</a> ·
+        <a href="https://github.com/dragongCode/BirthdayVideoAI/blob/main/LICENSE">License</a>
+      </p>
+      <p style="margin-top: 12px;">© 2025 Birthday Video AI. All rights reserved.</p>
+      <p style="margin-top: 8px; font-size: 0.8rem;">
+        Contact: <a href="mailto:support@birthdayvideo.ai">support@birthdayvideo.ai</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
