@@ -2,12 +2,6 @@
 
 > **AI-Powered Personalized Birthday Video Generator** — Create share-ready birthday wishes and invitation videos from curated templates or AI-assisted creative prompts.
 
-![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
-![License](https://img.shields.io/badge/license-proprietary-lightgrey?style=flat-square)
-![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20Drizzle%20%7C%20Creem-blue?style=flat-square)
-
-**Keywords:** `birthday-video-ai` · `ai-video-generator` · `birthday-wishes` · `invitation-maker` · `nextjs` · `drizzle-orm` · `creem` · `better-auth` · `video-templates` · `ai-creative-tools` · `personalized-video` · `mp4-export`
-
 ## Project Overview
 
 - **Template-Driven Creation:** Generate personalized birthday videos based on handpicked, high-quality templates.
@@ -37,30 +31,15 @@ To maintain a clean codebase, our extensive project references, marketing discov
 - **Social Channels:** [Twitter / X](https://x.com/DragongMusk) · [LinkedIn](https://www.linkedin.com/in/jake-gordon-08a925417/) · [YouTube Channel](https://www.youtube.com/@JakeGong)
 - **Product Hubs:** [Indie Hackers](https://www.indiehackers.com/product/birthdayvideoai/)
 - **Startup Launchpads:** [PromoteProject](https://www.promoteproject.com/startup/200087/birthdayvideoai) · [Launchtory](https://launchtory.com/projects/birthdayvideo-ai)
-- **Live Product:** [birthdayvideo.ai](https://birthdayvideo.ai/) · [Vercel Preview](https://birthday-video-ai.vercel.app/)
+- **Live Product:** [birthdayvideo.ai](https://birthdayvideo.ai/)
 
-## Repository Topics _(GitHub Settings → About → Topics)_
+## Live Deployments
 
-To maximize discoverability on GitHub and search engines, please add the following **Topics** in the repository's **About** section (the gear icon next to "About"):
+Primary release entry point (Landing Page first):
 
-```
-birthday-video-ai
-ai-video-generator
-birthday-wishes
-invitation-maker
-nextjs
-drizzle-orm
-creem
-better-auth
-video-templates
-ai-creative-tools
-personalized-video
-mp4-export
-template-driven
-saas
-```
-
-> GitHub allows up to **20 topics** per repository. Topics are indexed by both GitHub's internal search and Google's crawler, so they directly affect SEO. Keep them keyword-rich and relevant.
+- **🚀 Main Landing Page:** [birthdayvideoai.vercel.app](https://birthdayvideoai.vercel.app/)
+- **📄 GitHub Pages Mirror:** [dragongcode.github.io/BirthdayVideoAI](https://dragongcode.github.io/BirthdayVideoAI/)
+- **📦 Source Repository:** [github.com/dragongCode/BirthdayVideoAI](https://github.com/dragongCode/BirthdayVideoAI)
 
 ## License
 
